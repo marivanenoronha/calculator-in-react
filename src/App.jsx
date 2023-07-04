@@ -12,6 +12,14 @@ function App() {
     <label>Second number</label>
     <input type='number'/>
 
+    <select>
+      <option>Add</option>
+      <option>Multiply</option>
+      <option>Subtract</option>
+      <option>To divide</option>
+    </select>
+
+    <labe>Rusult</labe>
    </div>
   )
 }
