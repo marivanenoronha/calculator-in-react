@@ -20,6 +20,10 @@ function App() {
     }
   }
 
+  useEffect(() =>{
+    seteResult(calculate());
+  }, [numberOne, numberTwo, opertion]);
+
   return (
     <div className='app'>
       <h1>Calculator in react</h1>
@@ -35,7 +39,7 @@ function App() {
         onChange={(e) => seteNumberTwo(e.target.value)}
       />
 
-      <select onChange={(e) => seteResult(e.target.value)}>
+      <select onChange={(e) => setOperation(e.target.value)}>
         <option>Add</option>
         <option>Multiply</option>
         <option>Subtract</option>
